@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hangman!</title>
+</head>
+
+<body>
+    <h1>Hangman!</h1>
+    <script>
+        var words = [
+            "javascript",
+            "monkey",
+            "amazing",
+            "pancake",
+            "hippopotamus",
+            "squirrel",
+            "alligator",
+            "chicken",
+            "supercalifragilisticexpialidocious"
+        ];
+        var word = words[Math.floor(Math.random() * words.length)];
+        var answerArray = [];
+        for (var i = 0; i < word.length; i++) {
+            answerArray[i] = "_";
+        }
+        var remainingLetters = word.length;
+        var numGuesses = 0;
+        var maxGuesses = 5;
+        var correctGuess = false;
+        while (remainingLetters > 0 && numGuesses < maxGuesses) {
+
+            alert(answerArray.join(" "));
+            var guess = prompt("Guess a letter, or click 'Cancel' to stop playing :(\nLives remaining: " + (maxGuesses - numGuesses));
+            if (guess === null) {
+                break;
+            } else if (guess.length !== 1) {
+                alert("Please enter a single letter.");
+            } else {
+                guess = guess.toLowerCase();
+                for (var j = 0; j < word.length; j++) {
+                    if (word[j] === guess && answerArray[j] === "_") {
+                        answerArray[j] = guess;
+                        remainingLetters--;
+                        correctGuess = true;
+                    }
+                }
+            }
+            if (!correctGuess) {
+                numGuesses++;
+            }
+        }
+        alert(answerArray.join(" "));
+        if (answerArray.join("") === word) {
+            alert("Good job! The answer was " + word + "!!!");
+        } else {
+            alert("Aw shucks, you lost! Better luck next time!\nThe word was: " + word);
+        }
+    </script>
+</body>
+
+</html>
