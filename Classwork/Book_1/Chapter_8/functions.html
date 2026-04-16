@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Basic anatomy of a function:
+        // function (){
+        //     console.log("Do something");
+        // }
+        //Creating a simple function:
+        // var ourFirstFunction = function () {
+        //     console.log("Hello world!");
+        // };
+        // ourFirstFunction();
+
+        //Parsing arguments into functions:
+        // var sayHelloTo = function (name) {
+        //     console.log("Hello", name + "!");
+        // };
+        // sayHelloTo("Ethan");
+
+        //Printing cat faces!
+        // var drawCats = function (howManyTimes) {
+        //     for (var i = 1; i <= howManyTimes; i++) {
+        //         console.log(i, "=^.^=");
+        //     }
+        // };
+        // drawCats(100);
+
+        //Passing multiple arguments to a function:
+        // var printMultipleTimes = function (howManyTimes, whatToDraw) {
+        //     for (var i = 0; i < howManyTimes; i++) {
+        //         console.log(i+1, whatToDraw);
+        //     }
+        // };
+        // printMultipleTimes(5, "=^.^=");
+
+        //Returning values from functions:
+        // var double = function (number) {
+        //     return number * 2;
+        // };
+        // console.log(double(3));
+        // console.log(double(5) + double(6));
+        // console.log(double(double(3)));
+
+        //Function to pick a random word:
+        // randomWords[Math.floor(Math.random()*randomWords.length)];
+        // var pickRandomWord = function (words) {
+        //     return words[Math.floor(Math.random() * words.length)];
+        // };
+        // var randomWords = ["Planet", "Worm", "Flower", "Computer"];
+        // console.log(pickRandomWord(randomWords)); 
+
+        //Random Insult generator
+        // var randomBodyParts = ["Face", "Nose", "Hair"];
+        // var randomAdjectives = ["Smelly", "Boring", "Stupid"];
+        // var randomWords = ["Fly", "Marmot", "Stick", "Monkey", "Rat"];
+        // // Pick a random body part from the randomBodyParts array:
+        // var randomBodyPart = randomBodyParts[Math.floor(Math.random() * 3)];
+        // // Pick a random adjective from the randomAdjectives array:
+        // var randomAdjective = randomAdjectives[Math.floor(Math.random() * 3)];
+        // // Pick a random word from the randomWords array:
+        // var randomWord = randomWords[Math.floor(Math.random() * 5)];
+        // // Join all the random strings into a sentence:
+        // var randomString = "Your " + randomBodyPart + " is like a " + randomAdjective + " " + randomWord + "!!!";
+        // console.log(randomString);
+
+        //Or shortened:
+        // var randomBodyParts = ["Face", "Nose", "Hair"];
+        // var randomAdjectives = ["Smelly", "Boring", "Stupid"];
+        // var randomWords = ["Fly", "Marmot", "Stick", "Monkey", "Rat"];
+
+        // var pickRandomWord = function (words) {
+        //     return words[Math.floor(Math.random() * words.length)];
+        // };
+        // var randomString = "Your " + pickRandomWord(randomBodyParts) + " is like a " + pickRandomWord(randomAdjectives) + " " + pickRandomWord(randomWords) + "!!!";
+        // console.log(randomString);
+
+        //Turning the insult generator into a function:
+        // var generateRandomInsult = function () {
+        //     var randomBodyParts = ["Face", "Nose", "Hair"];
+        //     var randomAdjectives = ["Smelly", "Boring", "Stupid"];
+        //     var randomWords = ["Fly", "Marmot", "Stick", "Monkey", "Rat"];
+
+        //     var pickRandomWord = function (words) {
+        //         return words[Math.floor(Math.random() * words.length)];
+        //     };
+        //     var randomString = "Your " + pickRandomWord(randomBodyParts) + " is like a " + pickRandomWord(randomAdjectives) + " " + pickRandomWord(randomWords) + "!!!";
+        //     console.log(randomString);
+        // };
+        // generateRandomInsult();
+        // generateRandomInsult();
+        // generateRandomInsult();
+
+        //Leaving a function early with return:
+        // var fifthLetter = function (name) {
+        //     if (name.length < 5) {
+        //         return;
+        //     };
+        //     return "The fifth letter of your name is " + name[4] + ".";
+        // };
+        // console.log(fifthLetter("Ethan"));
+        // console.log(fifthLetter("Etha"));
+
+        //Using return multiple times instead of if...else statements
+        // function medalForScore(score) {
+        //     if (score < 3) {
+        //         return "Bronze";
+        //     }
+        //     if (score < 7) {
+        //         return "Silver";
+        //     }
+        //     return "Gold";
+        // };
+        // console.log(medalForScore(2));
+        // console.log(medalForScore(3));
+        // console.log(medalForScore(4));
+        // console.log(medalForScore(6));
+        // console.log(medalForScore(7));
+        // console.log(medalForScore(8));
+    </script>
+</body>
+
+</html>
