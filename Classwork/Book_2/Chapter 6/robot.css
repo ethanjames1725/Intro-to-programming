@@ -1,0 +1,88 @@
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+p {
+    font-size: 2.5em;
+}
+
+.eye {
+    background-color: lightblue;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+}
+
+.arm {
+    background-color: #f942f9;
+    position: absolute;
+    top: 35%;
+    width: 5%;
+    height: 40%;
+}
+
+#head {
+    width: 30%;
+    height: 30%;
+    border-radius: 15%;
+    background-color: #11ffe7;
+    position: absolute;
+    left: 33%;
+    top: 1%;
+}
+
+#righteye {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+#lefteye {
+    position: absolute;
+    left: 90%;
+    top: 20%;
+}
+
+#nose {
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    width: 10%;
+    height: 10%;
+    background-color: pink;
+}
+
+#mouth {
+    position: absolute;
+    width: 65%;
+    height: 15%;
+    left: 20%;
+    top: 70%;
+    background-color: purple;
+}
+
+#body {
+    position: absolute;
+    left: 25%;
+    top: 35%;
+    width: 45%;
+    height: 55%;
+    background-color: #bf5cfd;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#rightarm {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 7%;
+    height: 25%;
+}
+
+#leftarm {
+    position: absolute;
+    left: 73%;
+    width: 25%;
+    height: 7%;
+}
