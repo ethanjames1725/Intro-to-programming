@@ -20,7 +20,7 @@ askQuestion(0);
 passed to it */
 function askQuestion(questionNumber) {
     answer.style.display = "block";
-    answer.length = questionNumber;
+    answers.length = questionNumber;
 
     switch (questionNumber) {
         case 0:
